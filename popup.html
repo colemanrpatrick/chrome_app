@@ -1,0 +1,31 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Zippy</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+ <body>
+
+    <div>
+      <header><img src="icon.png"/><span>FIND A CITY BY ZIPCODE</span></header>
+      <form autocomplete="off">
+        <input type="text" name="name" value="" placeholder="ENTER ZIP">
+        <h2>Numbers range between 00210 and 99950</h2>
+        <button type="button" name="button">FIND CITY</button>
+      </form>
+    </div>
+  <section>
+
+  </section>
+
+    <script src="bower_components/jquery/dist/jquery.js">
+    </script>
+    <script src="popup.js"></script>
+  </body>
+</html>
